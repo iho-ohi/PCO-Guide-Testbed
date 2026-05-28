@@ -1,7 +1,5 @@
 
 # Introduction
 
-This repository contains the [Nautical Data API](./nautical-data/) and the [Operational Data API](./operational-data/) as specified in the PCO Guide of IAPH and IHMA, facilitated by the IHO.
-
-The repository includes the official API specifications, demo implementations, and validation tools intended to support consistent and accurate use of the standard.
+This testbed contains materials developed by a collaboration of all PCO Initiatives and related IMO NGO’s to allow ports to share Nautical and Operational Data based on IHO and IMO Standards. The main asset of this testbed is an API especially designed to enable such tests. This testbed and its content are property of the Port of Rotterdam under the custodianship of IHO’s Nautical Information Provision Working Group (NIPWG).
 
