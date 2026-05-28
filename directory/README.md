@@ -1,20 +1,16 @@
-
-# Harbor Directory
+# Port Directory
 
 ## Introduction
 
-This directory contains a list of harbors that have implemented the nautical data API and/or the operational data API and has passed the testbed.
+This directory provides an overview of ports that are offering or implementing the Nautical Data API and/or the Operational Data API. The first list contains ports where the API has been fully implemented and have passed the testbed. The second list contains ports that are currently in the process of implementation and validation.
 
-## Compliant Harbors
+## Compliant Ports
 
-| Nr. | Harbor                    | Nautical Data          | Operational Data       |
-|-----|---------------------------|------------------------|------------------------|
-|   1 | Port of Rotterdam         | [API](https://api.portofrotterdam.com/v1/nautical-locations) | [API](https://api.portofrotterdam.com/v1/operational-data) |
+| Nr. | Port                      | Nautical Data                                                | Operational Data                                           |
+|-----|---------------------------|--------------------------------------------------------------|------------------------------------------------------------|
+|   1 | Port of Rotterdam         | [API](https://api.portofrotterdam.com/v1/nautical-locations) | In progress                                                |
 
-## Habors in development
+## Ports in progress
 
-| Harbor                    | Nautical Data          | Operational Data       |
+| Port                      | Nautical Data          | Operational Data       |
 |---------------------------|------------------------|------------------------|
-| Port of Bremerhaven       | In development         |                        |
-| Port of Götenborg         |                        |  In test               |
-
