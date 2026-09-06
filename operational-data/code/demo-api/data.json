@@ -20,14 +20,16 @@
             "shipReportingSystemEntryPortCode": "NLRTM",
             "shipImoNumber": "9239551",
             "shipStayReferenceNumber": "NLRTM26000001",
-            "berthName": "Parkkade",
+            "berthName": "PARKKADE 1",
+            "berthGln": "8719331166256",
             "plannedTimeOfDeparture": "2024-07-05T18:00:00Z"
         },
         {
             "shipReportingSystemEntryPortCode": "NLRTM",
             "shipImoNumber": "2345678",
             "shipStayReferenceNumber": "NLRTM26000002",
-            "berthName": "Parkkade",
+            "berthName": "PARKKADE 1",
+            "berthGln": "8719331166256",
             "plannedTimeOfDeparture": "2024-07-06T20:30:00Z"
         }
     ]
