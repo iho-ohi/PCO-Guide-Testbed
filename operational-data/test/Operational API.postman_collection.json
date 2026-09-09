@@ -1,0 +1,127 @@
+{
+  "info": {
+    "_postman_id": "6592ad01-f468-4bab-a39d-f36fea657f64",
+    "name": "Operational API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "14263682"
+  },
+  "item": [
+    {
+      "name": "Arrival",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "// Updated the test script to fix the TypeError\r",
+              "pm.test(\"Test status matches 200\", function () {\r",
+              "    pm.response.to.have.status(200);\r",
+              "});\r",
+              "\r",
+              "const jsonData = pm.response.json();\r",
+              "\r",
+              "const schema = {\r",
+              "    \"type\": \"object\",\r",
+              "    \"properties\": {\r",
+              "        \"shipReportingSystemEntryPortCode\": { \"type\": \"string\" },\r",
+              "        \"shipImoNumber\": { \"type\": \"string\" },\r",
+              "        \"shipStayReferenceNumber\": { \"type\": \"string\" },\r",
+              "        \"plannedTimeOfArrival\": { \"type\": \"string\" },\r",
+              "        \"pilotBoardingPlaceName\": { \"type\": \"string\" }\r",
+              "    },\r",
+              "    \"required\": [\"shipReportingSystemEntryPortCode\", \"shipImoNumber\", \"shipStayReferenceNumber\", \"plannedTimeOfArrival\", \"pilotBoardingPlaceName\"],\r",
+              "    \"additionalProperties\": false\r",
+              "};\r",
+              "\r",
+              "pm.test('Test body schema matches swagger definition', function () {\r",
+              "    pm.response.to.have.jsonSchema(schema);\r",
+              "});\r",
+              ""
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        }
+      ],
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3001/port-arrival/NLRTM/9239551/NLRTM26000001",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3001",
+          "path": [
+            "port-arrival",
+            "NLRTM",
+            "9239551",
+            "NLRTM26000001"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Departure",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "// Updated the test script to fix the TypeError\r",
+              "pm.test(\"Test status matches 200\", function () {\r",
+              "    pm.response.to.have.status(200);\r",
+              "});\r",
+              "\r",
+              "const jsonData = pm.response.json();\r",
+              "\r",
+              "const schema = {\r",
+              "    \"type\": \"object\",\r",
+              "    \"properties\": {\r",
+              "        \"shipReportingSystemEntryPortCode\": { \"type\": \"string\" },\r",
+              "        \"shipImoNumber\": { \"type\": \"string\" },\r",
+              "        \"shipStayReferenceNumber\": { \"type\": \"string\" },\r",
+              "        \"plannedTimeOfDeparture\": { \"type\": \"string\" },\r",
+              "        \"berthGln\": { \"type\": \"string\" },\r",
+              "        \"berthName\": { \"type\": \"string\" }\r",
+              "    },\r",
+              "    \"required\": [\"shipReportingSystemEntryPortCode\", \"shipImoNumber\", \"shipStayReferenceNumber\", \"plannedTimeOfDeparture\", \"berthGln\", \"berthName\"],\r",
+              "    \"additionalProperties\": false\r",
+              "};\r",
+              "\r",
+              "pm.test('Test body schema matches swagger definition', function () {\r",
+              "    pm.response.to.have.jsonSchema(schema);\r",
+              "});\r",
+              ""
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        }
+      ],
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3001/port-departure/NLRTM/9239551/NLRTM26000001",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3001",
+          "path": [
+            "port-departure",
+            "NLRTM",
+            "9239551",
+            "NLRTM26000001"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
